@@ -1,0 +1,259 @@
+body {
+  background-color: #dbdbdb;
+  font-family: 'Laila', serif;
+  color: #292929;
+  margin: 0px;
+}
+
+header {
+  text-align: center;
+  clear:right;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+ul li {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 3px;
+  display: block;
+}
+
+ul li:hover {
+  background-color: #f1f1f1;
+}
+
+ul a {
+  text-decoration: none;
+  color: #292929;
+  font-size: 20px;
+  display: block;
+}
+
+
+.intro {
+ clear: right;
+}
+
+img.profile-pic {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+  max-width: 450px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.text {
+  width: 90%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-white {
+  background-color: white;
+  text-align: center;
+  clear: right;
+}
+
+.category-grey {
+  background-color: #dbdbdb;
+  text-align: center;
+  clear: right;
+}
+
+h2 {
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+span.red {
+  color: #d31010;
+}
+
+
+.greg-pic {
+  border-radius: 20px 10px 20px 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #999999;
+  width: 100%;
+}
+
+
+
+.port-examples {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pictext {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pictext img {
+  width: 90%;
+}
+
+
+p {
+  width: 85%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:link.link {
+  text-decoration: none;
+  color: #292929;
+}
+
+a:visited.link {
+  text-decoration: none;
+  color: #292929;
+}
+
+span.gregwilson, .back-to-top {
+
+  font-size: 18px;
+
+}
+
+/* Media Queries ------------------------- */
+
+@media (max-width: 768px) {
+
+ul {
+  flex-direction: column;
+}
+
+.greg-pic {
+  max-width: 200px;
+}
+
+nav.nav-bottom {
+  display: none;
+}
+
+}
+
+@media (min-width: 768px) {
+
+
+ul {
+    margin-top: -15px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    clear:both;
+  }
+
+ul li {
+    background-color: inherit;
+    display: inline-block;
+  }
+
+.text {
+text-align: left;
+}
+
+
+img.profile-pic {
+    float: right;
+  }
+
+
+  .pictext {
+    max-width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .pictext img {
+    width: 100%;
+  }
+
+  .greg {
+    width: 30%;
+    padding: 20px;
+  }
+
+
+
+  .about-text {
+    width: 62%;
+  }
+
+  nav.nav-bottom {
+    display: inline-block;
+    width: 60%;
+    line-height: 30px;
+    text-align: right;
+    float: right;
+    margin-right: 30px;
+
+  }
+
+  span.back-to-top {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+    .pictext {
+      width: 33%;
+    }
+
+    h1 {
+      float: left;
+      padding-left: 65px;
+    }
+
+    nav {
+      float: right;
+      width: 40%;
+      line-height: 95px;
+      text-align: right;
+      padding-right: 40px;
+    }
+
+    .intro {
+      clear: both;
+      width: 96%;
+    }
+
+    .greg {
+      width: 20%;
+      padding-left: 100px;
+    }
+
+}
